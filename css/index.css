@@ -3,12 +3,12 @@
 
 --Blue: hsl(246, 80%, 60%);
 
---Light-red: hsl(15, 100%, 70%);
---Soft-blue: hsl(195, 74%, 62%);
---Light-red: hsl(348, 100%, 68%);
---Lime-green: hsl(145, 58%, 55%);
---Violet: hsl(264, 64%, 52%);
---Soft-orange : hsl(43, 84%, 65%);
+--Light-red-work: hsl(15, 100%, 70%);
+--Soft-blue-play: hsl(195, 74%, 62%);
+--Light-red-study: hsl(348, 100%, 68%);
+--Lime-green-excersice: hsl(145, 58%, 55%);
+--Violet-social: hsl(264, 64%, 52%);
+--Soft-orange-care : hsl(43, 84%, 65%);
 
 /* Neutral */
 
@@ -27,5 +27,47 @@
 body{
     font-size: 18px;
     font-family: 'Rubik', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.content-card{
+    width: 350px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+h1{
+    margin: 0;
+    font-size: 0.5em;
+}
 
+
+
+.card{
+    background-color: var(--Light-red-work);
+    background-image: url("../images/icon-work.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 50px;
+    justify-self: center;
+    width: 325px ;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px 0;
+    display: flex;
+    align-items: flex-end;
+
+}
+.principal{
+    height: 200px;
+}
+.card_content-info{
+    width: 100%;
+    height: 115px;
+    background-color: var(--Dark-blue);
+    border-radius: 10px;
 }

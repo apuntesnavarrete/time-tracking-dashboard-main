@@ -114,6 +114,14 @@ h1{
     color: var(--Desaturated-blue);
 }
 
+input[type="radio"]:checked + label {
+    color: snow;
+}
+input{
+    display: none;
+}
+
+
 .card_principal-profile{
     display: flex;
     align-items: center;
